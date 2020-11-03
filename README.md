@@ -2,7 +2,7 @@
 
 This is a simple app which deals card. It uses the https://deckofcardsapi.com/ api to fetch a new deck and randomly deals card from it till the deck gets empty.
 
-> This project is a part of Colt Steele's Mordern React Bootcamp
+> This project is a part of Colt Steele's Modern React Bootcamp
 
 # Getting Started
 
