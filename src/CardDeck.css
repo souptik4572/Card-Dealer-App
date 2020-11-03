@@ -1,0 +1,62 @@
+.CardDeck {
+	width: 70%;
+	height: auto;
+	margin: 3.5em auto;
+	color: white;
+	font-family: 'Slabo 27px', serif;
+}
+
+.CardDeck h1 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.CardDeck p {
+	letter-spacing: 2px;
+}
+
+.CardDeck button {
+	padding: 0px 1.5em;
+	margin: 2em;
+	background-color: #00bfa5;
+	font-size: 1rem;
+	color: white;
+	outline: none;
+	border: none;
+	border-radius: 2.5%;
+}
+
+.CardDeck-tray {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.diagonal {
+	position: relative;
+	line-height: 50px;
+	color: white;
+	border: none;
+	font-weight: lighter;
+	font-family: 'Open Sans', sans-serif;
+	overflow: hidden;
+	z-index: 1;
+	padding: 0px;
+}
+.diagonal:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500%;
+	height: 1000%;
+	background: #34495e;
+	z-index: -1;
+	transform-origin: 0% 0%;
+	transform: translateX(calc(20% - 25px)) translateY(-10%) rotate(-45deg);
+	transform: translateY(10%) translateX(16%) rotate(-45deg);
+	transition: transform .3s;
+}
+.diagonal:hover::after {
+	transform: translateY(10%) translateX(-25px) rotate(-45deg);
+}
